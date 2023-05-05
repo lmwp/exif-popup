@@ -1,0 +1,39 @@
+# Copyright (C) 2023 Laurent MILLET
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: EXIF Popup 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/exif-popup\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-05-05T13:16:59+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: exif-popup\n"
+
+#. Plugin Name of the plugin
+msgid "EXIF Popup"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://example.com/plugins/billetweb-api/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Displays EXIF information on mouseover of any <img> tag using AJAX."
+msgstr ""
+
+#. Author of the plugin
+msgid "Laurent MILLET"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://example.com/"
+msgstr ""
+
+#: exit-popup.php:36
+msgid "Image data not found."
+msgstr ""
