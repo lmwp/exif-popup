@@ -35,6 +35,7 @@ jQuery(document).ready(function($) {
           left: e.pageX + 5,
           top: e.pageY + 5,
           background: 'white',
+          'border-radius': '3px',
           border: '1px solid #ccc',
           padding: '5px',
           zIndex: 10000,

@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: EXIF Popup
-Plugin URI: https://example.com/plugins/billetweb-api/
+Plugin URI: https://example.com/exif-popup
 Description: Displays EXIF information on mouseover of any <img> tag using AJAX. 
 Version: 0.1
 Author: Laurent MILLET
