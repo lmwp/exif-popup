@@ -1,6 +1,7 @@
 .exif-popup {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 14px;
+    border-radius: 3px;
     width: auto;
     white-space: nowrap;
     text-align: left;
