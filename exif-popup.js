@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 
       if (attachmentId) {
           if (exifCache[attachmentId]) {
-              chatgptDisplayExifPopup(e, exifCache[attachmentId]);
+              TDDisplayExifPopup(e, exifCache[attachmentId]);
           } else {
               $.ajax({
                   url: exifPopupAjax.ajaxurl,
@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
                       if (response.success) {
                           const exifData = response.data;
                           exifCache[attachmentId] = exifData;
-                          chatgptDisplayExifPopup(e, exifData);
+                          TDDisplayExifPopup(e, exifData);
                       }
                   }
               });
@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
       }
   });
 
-  function chatgptDisplayExifPopup(e, exifData) {
+  function TDDisplayExifPopup(e, exifData) {
       const popup = $('<div class="exif-popup"></div>');
       popup.css({
           position: 'absolute',

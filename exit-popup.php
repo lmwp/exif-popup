@@ -10,16 +10,16 @@ Text domain = exif-popup
 License: GPL2
 */
 // Enqueue scripts
-add_action('wp_enqueue_scripts', 'chatgpt_exif_popup_enqueue_scripts');
-function chatgpt_exif_popup_enqueue_scripts() {
+add_action('wp_enqueue_scripts', 'TD_exif_popup_enqueue_scripts');
+function TD_exif_popup_enqueue_scripts() {
     wp_enqueue_script('exif-popup', plugin_dir_url(__FILE__) . 'exif-popup.js', array('jquery'), '1.0', true);
     wp_localize_script('exif-popup', 'exifPopupAjax', array('ajaxurl' => admin_url('admin-ajax.php')));
 }
 
 // AJAX handler
-add_action('wp_ajax_exif_popup', 'chatgpt_exif_popup_ajax_handler');
-add_action('wp_ajax_nopriv_exif_popup', 'chatgpt_exif_popup_ajax_handler');
-function chatgpt_exif_popup_ajax_handler() {
+add_action('wp_ajax_exif_popup', 'TD_exif_popup_ajax_handler');
+add_action('wp_ajax_nopriv_exif_popup', 'TD_exif_popup_ajax_handler');
+function TD_exif_popup_ajax_handler() {
     $attachment_id = intval($_POST['attachment_id']);
     $image_data = wp_get_attachment_metadata($attachment_id);
 
@@ -37,7 +37,7 @@ function chatgpt_exif_popup_ajax_handler() {
 }
 
 // Enqueue CSS
-add_action('wp_enqueue_scripts', 'chatgpt_exif_popup_enqueue_styles');
-function chatgpt_exif_popup_enqueue_styles() {
+add_action('wp_enqueue_scripts', 'TD_exif_popup_enqueue_styles');
+function TD_exif_popup_enqueue_styles() {
     wp_enqueue_style('exif-popup', plugin_dir_url(__FILE__) . 'exif-popup.css', array(), '1.0');
 }
