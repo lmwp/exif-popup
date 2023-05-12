@@ -1,9 +1,9 @@
 jQuery(document).ready(function($) {
   const exifCache = {};
 
-  $('img').on('mouseenter', function(e) {
+  $('img[class*="wp-image-"]').on('mouseenter', function(e) {
       const img = $(this);
-      const attachmentId = img.attr('data-attachment-id');
+      const attachmentId = img.attr('class').match(/wp-image-(\d+)/)[1];
 
       if (attachmentId) {
           if (exifCache[attachmentId]) {
