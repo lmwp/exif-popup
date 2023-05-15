@@ -6,7 +6,7 @@ Description: Displays EXIF information on mouseover of any <img> tag using AJAX.
 Version: 0.1
 Author: Laurent MILLET
 Author URI: https://example.com/
-Text domain = exif-popup
+Text Domain = exif-popup
 License: GPL2
 */
 // Enqueue scripts
@@ -32,7 +32,7 @@ function TD_exif_popup_ajax_handler() {
         );
         wp_send_json_success($response);
     } else {
-        wp_send_json_error(array('message' => 'Image data not found.'));
+        wp_send_json_error(array('message' => __('Image data not found.', 'exif-popup')));
     }
 }
 
