@@ -1,0 +1,21 @@
+#wpadminbar #wp-admin-bar-exif-popup-toggle .ab-icon {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 6px;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  #wpadminbar #wp-admin-bar-exif-popup-toggle .dashicons-yes:before {
+    content: '\f147';
+  }
+  
+  #wpadminbar #wp-admin-bar-exif-popup-toggle .dashicons-no:before {
+    content: '\f158';
+  }
+  
+  #wpadminbar #wp-admin-bar-exif-popup-toggle .ab-icon:hover {
+    cursor: pointer;
+    background-color: #ddd;
+  }
